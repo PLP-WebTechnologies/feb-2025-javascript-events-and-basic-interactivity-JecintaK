@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Web Bundle</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>Interactive Web Bundle</h1>
+
+  <!-- Event Handling Section -->
+  <button id="myButton">Click Me</button>
+  <br />
+
+  <!-- Hover Effects -->
+  <div id="hoverArea" class="hoverArea">Hover over me!</div>
+
+  <!-- Keypress Detection -->
+  <div id="keypressMsg">Press "Enter"!</div>
+
+  <!-- Double-click or Long Press -->
+  <div id="secretArea">Double-click or Long press me!</div>
+
+  <!-- Interactive Elements -->
+  <div class="gallery">
+    <img src="image1.jpg" class="image-slide" style="display: block;" />
+    <img src="image2.jpg" class="image-slide" style="display: none;" />
+    <img src="image3.jpg" class="image-slide" style="display: none;" />
+  </div>
+  <button onclick="nextSlide()">Next Slide</button>
+
+  <!-- Accordion Section -->
+  <button class="accordion">Section 1</button>
+  <div class="panel">
+    <p>Content 1</p>
+  </div>
+
+  <!-- Form Section -->
+  <form id="myForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name" required />
+    <br />
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email" required />
+    <br />
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Enter your password" required />
+    <div id="passwordFeedback"></div>
+    <br />
+    
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
